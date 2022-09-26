@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./Index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Nicolas Vicente Contact Information:</h1>
+        <br>
+        <p>I'm open for all of your inquires!</p>
+        <br>
+    </header>
+   
+
+    <form action="/Thanks.html" method="POST" name="contact" netlify>
+    <fieldset>
+        <legend>Your information:</legend>
+        <br>
+        <br>
+        <label for="name">Please enter your name:</label>
+        <br>
+        <input type="text" name="name" required>
+        <br>
+        <br>
+        <label for="email">Please enter your email address:</label>
+        <br>
+        <input type="text" name="email" required>
+        <br>
+        <br>
+        <label for="phone">Please enter you phone number</label>
+        <br>
+        <input type="text" name="phone" optional>
+        <br>
+        <br>
+        <label for="query">Please state what you are inquiring about </label>
+        <br>
+        <select id="query" name="Option">
+            <option value="Career opportunity">Career opportunity</option>
+            <option value="Business proposal">Business proposal</option>
+            <option value="Personal query">Personal query</option>
+            <option value="complaint">Complaint</option>
+            <option value="General query">General query</option>
+        </select>
+        <br>
+        <br>
+        <label for="message">Please enter a message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    </form>
+</body>
+
+</html>
